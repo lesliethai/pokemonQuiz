@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <img class="title" src="./assets/titlepage-sizeddown.png" alt="Who's that Pokemon quiz title">
+    </header>
+
+    <main>
+        <!-- direction box -->
+        <div class="instructions wrapper">
+            <p class="intro">Before heading out to test your Pokemon journey, please note:</p>
+            <ul>
+                <li>There are a total of <span>20</span> Pokemon silhouettes.</li>
+                <li>Each question has <span>4</span> answer choices. Select the correct Pokemon from the list!</li>
+                <li>Once you click on an answer choice, there is no going back. <strong>Choose wisely!</strong></li>
+
+
+                <li>There is a time and place for everything...but for now, have fun!</li>
+            </ul>
+            <div class="startButton">
+                <button class="start mainControl">Start</button>
+            </div>
+        </div>
+
+        <!-- quiz box -->
+        <div class="quizContainer hidden"> 
+            <div class="quizLeft">
+                <div class="counterLeft">
+                    <div class="questionCounter"></div>
+                    <div class="quizScore"></div>
+                </div>
+                <div class="pokemonImg">
+                    <img src="./assets/pokeball.png" alt="pokeball">
+                </div>
+            </div>
+            <div class="quizBottom">
+                <div class="quizRight">
+                    <div class="choices">
+
+                        <div class="choicesLeft">
+                            <button class="option1 button">Choice</button>
+                            <button class="option2 button">Choice</button>
+                        </div>
+                        <div class="choicesRight">
+                            <button class="option3 button">Choice</button>
+                            <button class="option4 button">Choice</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextAndQuitBtn">
+                    <div class="nextBtnContainer">
+                        <button type="button" class="nextButton mainControl">Next</button>
+                    </div>
+                    <div class="quitBtnContainer">
+                        <button type="button" class="quitButton mainControl">Quit</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- result box -->
+        <div class="results-container hidden"> 
+            <p class="results"></p>
+            <button class="mainMenu">Main Menu</button>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="https://junocollege.com/" target="_blank">Created at Juno College
+        </a></p>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
